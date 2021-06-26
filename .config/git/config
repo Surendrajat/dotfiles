@@ -1,0 +1,31 @@
+[core]
+	autocrlf = input
+    pager = delta
+[user]
+	name = Surendrajat
+	email = surendrajat@protonmail.com
+[credential]
+	helper = cache --timeout=604800
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+[protocol]
+	version = 2
+[pull]
+	ff = only
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    side-by-side = false
+    features = line-numbers decorations
+    whitespace-error-style = 22 reverse
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
+
