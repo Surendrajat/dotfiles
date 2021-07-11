@@ -41,6 +41,12 @@ if test -d ~/Applications/depot_tools
     end
 end
 
+# Add depot_tools to PATH
+if test -d ~/apps/flutter/bin
+    if not contains -- ~/apps/flutter/bin $PATH
+        set -p PATH ~/apps/flutter/bin
+    end
+end
 
 ## Starship prompt
 if status --is-interactive
