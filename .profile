@@ -5,7 +5,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 
 # Default apps
 export EDITOR=/usr/bin/nvim
-export BROWSER=firedragon
+export BROWSER=brave
 export TERM=alacritty
 export MAIL=geary
 export QT_QPA_PLATFORMTHEME="qt5ct"
