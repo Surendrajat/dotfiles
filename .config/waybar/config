@@ -2,14 +2,14 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 30,
+    //"height": 32,
     //"width": 1350, // Waybar width
-    // Choose the order of the modules idle_inhibitor
+    // Choose the order of the modules
     //"modules-left": ["custom/launcher","sway/workspaces", "sway/mode", "sway/window"],
     //"modules-right": ["custom/pacman", "backlight", "custom/keyboard-layout", "cpu", "memory", "battery", "network", "pulseaudio","tray", "idle_inhibitor", "clock","custom/power"], 
     "modules-left": ["sway/mode", "sway/window"],
     "modules-center": ["sway/workspaces"],
-    "modules-right": ["cpu", "memory", "battery", "network", "pulseaudio", "custom/mic", "idle_inhibitor", "clock", "custom/dunst","custom/power"],
+    "modules-right": ["pulseaudio", "custom/mic", "idle_inhibitor", "network", "clock", "battery", "custom/dunst","custom/power"],
     
  // Modules configuration
  
@@ -88,6 +88,7 @@
         "format": "{icon} {capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
+        "format-charging": " {capacity}%",
         "format-icons": ["", "", "", "", ""]
         //"format-icons": ["", "", "", "", "", "", "", "", "", ""]
     },
