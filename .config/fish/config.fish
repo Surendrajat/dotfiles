@@ -41,10 +41,28 @@ if test -d ~/Applications/depot_tools
     end
 end
 
-# Add depot_tools to PATH
+# Add flutter PATH
 if test -d ~/apps/flutter/bin
     if not contains -- ~/apps/flutter/bin $PATH
         set -p PATH ~/apps/flutter/bin
+    end
+end
+
+# Android SDK related changes
+set -x ANDROID_HOME ~/apps/android
+if test -d $ANDROID_HOME/tools
+    if not contains -- $ANDROID_HOME/tools $PATH
+        set -p PATH $ANDROID_HOME/tools
+    end
+end
+if test -d $ANDROID_HOME/tools/bin
+    if not contains -- $ANDROID_HOME/tools/bin $PATH
+        set -p PATH $ANDROID_HOME/tools/bin
+    end
+end
+if test -d $ANDROID_HOME/platform-tools
+    if not contains -- $ANDROID_HOME/platform-tools $PATH
+        set -p PATH $ANDROID_HOME/platform-tools
     end
 end
 
