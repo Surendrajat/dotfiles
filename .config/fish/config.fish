@@ -10,8 +10,10 @@ set -U __done_notification_urgency_level low
 
 
 ## Environment setup
-# Apply .profile
-source ~/.profile
+# Apply ~/.config/fish/profile
+if test -f ~/.config/fish/profile
+  source ~/.config/fish/profile
+end
 
 # Add ~/.local/bin to PATH
 if test -d ~/.local/bin
