@@ -34,13 +34,6 @@ if test -d ~/.emacs.d/bin
     end
 end
 
-# Add depot_tools to PATH
-if test -d ~/Applications/depot_tools
-    if not contains -- ~/Applications/depot_tools $PATH
-        set -p PATH ~/Applications/depot_tools
-    end
-end
-
 # Add flutter PATH
 if test -d ~/apps/flutter/bin
     if not contains -- ~/apps/flutter/bin $PATH
@@ -165,13 +158,6 @@ alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/p
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist" 
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist" 
 
-# Help people new to Arch
-alias apt='man pacman'
-alias apt-get='man pacman'
-alias helpme='cht.sh --shell'
-alias please='sudo'
-alias tb='nc termbin.com 9999'
-
 # Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
 
@@ -183,7 +169,3 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME'
 
-## Run paleofetch if session is interactive
-#if status --is-interactive
-#   neofetch
-#end
