@@ -4,12 +4,12 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 
 # Default apps
-export EDITOR=/usr/bin/nvim
-export BROWSER=brave
+export EDITOR=nvim
+export BROWSER=brave-browser
 export TERM=alacritty
 export MAIL=geary
 export QT_QPA_PLATFORMTHEME="qt5ct"
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtkrc-2.0"
 #export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel {$_JAVA_OPTIONS}"
 
 # Session

@@ -27,7 +27,7 @@ if test -d ~/.local/share/go/bin
     end
 end
 
-# Add ~/.local/share/go/bin to PATH
+# Add ~/.emacs.d/bin to PATH
 if test -d ~/.emacs.d/bin
     if not contains -- ~/.emacs.d/bin $PATH
 	    set -p PATH ~/.emacs.d/bin
