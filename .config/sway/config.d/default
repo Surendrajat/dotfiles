@@ -205,8 +205,8 @@ bindsym $mod+o exec firedragon
 #
 # Screenshots
 #
-bindsym print exec /usr/share/sway/scripts/grimshot --notify save output
-bindsym Shift+print exec ~/.config/sway/scripts/screenshot.sh
+bindsym print exec grim - | swappy -f -
+bindsym Shift+print exec grim -g "$(slurp)" - | swappy -f -
 
 #
 # mako
