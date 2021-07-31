@@ -66,11 +66,6 @@ if test -d $ANDROID_HOME/platform-tools
     end
 end
 
-## Starship prompt
-if status --is-interactive
-   source ("/usr/bin/starship" init fish --print-full-init | psub)
-end
-
 
 ## Functions
 # Functions needed for !! and !$ https://github.com/oh-my-fish/plugin-bang-bang
