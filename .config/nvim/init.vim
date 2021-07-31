@@ -23,12 +23,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'itchyny/lightline.vim'
   Plug 'mengelbrecht/lightline-bufferline'
 
-  " Theme and coloring
-"  Plug 'morhetz/gruvbox'
-
-  " Icons for different file types
-  Plug 'ryanoasis/vim-devicons'
-
   " Comment out lines
   Plug 'tpope/vim-commentary'
 
@@ -38,16 +32,10 @@ call plug#begin('~/.vim/plugged')
   " Git blamer
   Plug 'APZelos/blamer.nvim'
 
-  " Markdown
-"  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-	Plug 'junegunn/seoul256.vim'
-	Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
-
-"   Plug 'cespare/vim-toml'
-	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-	Plug 'nvim-treesitter/playground'
-
+  " Highlight Color codes
+  Plug 'ap/vim-css-color'
 call plug#end()
 
 set backspace=indent,eol,start
