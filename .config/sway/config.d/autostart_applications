@@ -39,11 +39,9 @@ exec libinput-gestures-setup start
 # Outputs
 exec kanshi
 
-# Xdg DEsktop Portal
+# XDG Desktop Portal
 exec /usr/libexec/xdg-desktop-portal
 
 # Tracker daemon for gnome apps
 exec tracker daemon -s
 
-# Cheatsheet
-exec micro ~/.config/sway/cheatsheet
