@@ -2,7 +2,7 @@
 # Hide welcome message
 set fish_greeting
 set VIRTUAL_ENV_DISABLE_PROMPT "1"
-set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
+# set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 # Set settings for https://github.com/franciscolourenco/done
 set -U __done_min_cmd_duration 10000
@@ -45,11 +45,11 @@ end
 
 # Android SDK related changes
 set -x ANDROID_HOME ~/apps/android
-if test -d $ANDROID_HOME/tools
-    if not contains -- $ANDROID_HOME/tools $PATH
-        set -p PATH $ANDROID_HOME/tools
-    end
-end
+# if test -d $ANDROID_HOME/tools
+#     if not contains -- $ANDROID_HOME/tools $PATH
+#         set -p PATH $ANDROID_HOME/tools
+#     end
+# end
 if test -d $ANDROID_HOME/tools/bin
     if not contains -- $ANDROID_HOME/tools/bin $PATH
         set -p PATH $ANDROID_HOME/tools/bin
@@ -58,6 +58,17 @@ end
 if test -d $ANDROID_HOME/platform-tools
     if not contains -- $ANDROID_HOME/platform-tools $PATH
         set -p PATH $ANDROID_HOME/platform-tools
+    end
+end
+if test -d $ANDROID_HOME/emulator
+    if not contains -- $ANDROID_HOME/emulator $PATH
+        set -p PATH $ANDROID_HOME/emulator
+    end
+end
+# for aapt/aapt2
+if test -d $ANDROID_HOME/build-tools/31.0.0
+    if not contains -- $ANDROID_HOME/build-tools/31.0.0 $PATH
+        set -p PATH $ANDROID_HOME/build-tools/31.0.0
     end
 end
 
