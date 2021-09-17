@@ -54,6 +54,7 @@ assign [class="VSCodium"] $ws3
 assign [class="Emacs"] $ws3
 # ws 4
 assign [app_id="sublime_merge"] $ws4
+assign [app_id="smerge"] $ws4
 # ws 5
 assign [app_id="Microsoft Teams - Preview"] $ws5
 assign [app_id="Slack"] $ws5
@@ -62,6 +63,7 @@ assign [class="(?i)Skype"] $ws5
 assign [class="(?i)Mailspring"] $ws5
 # ws 9
 assign [app_id="TelegramDesktop"] $ws9
+assign [app_id=".*Telegram_Desktop"] $ws9
 assign [app_id="discord"] $ws9
 # ws 10
 assign [app_id="subl"] $ws10
