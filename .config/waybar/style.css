@@ -47,36 +47,42 @@ nord15 #b48ead
     padding: 0 0;
     font-family:UbuntuMono,FontAwesome;
     font-size: 14px;
-    margin-right: 5px;
-    margin-left: 5px;
+    font-weight: 600;
     padding-bottom:0px;
-   }
+}
 
 window#waybar {
     background:#2e3440;
+    border-radius: 0px;
 }
 
 #workspaces button {
-    padding: 2px 0px;
-    border-bottom: 2px;
+    padding: 0px 8px;
     color: #eceff4;
-    border-color: #d8dee9;
-    border-style: solid;
-    margin-top:2px;
+    border-style: hidden;
+    font-size: 16px;
+    margin: 2px 5px;
+    background-color: #434c5e;
 }
 
 #workspaces button.focused {
-    border-color: #81a1c1;
+    border: 2px;
+    border-color: #88c0d0;
+    font-size: 16px;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1px 3px;
+    background-color: #2e3440;
 }
 
-#mode {
-    color: #ebcb8b;
+#workspaces button:hover {
+    background: #88c0d0;
 }
 
 #clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman,#custom-dunst,#custom-mic {
-    padding: 0 3px;
-    border-bottom: 2px;
-    border-style: solid;
+    padding: 2px 8px;
+    background-color: #434c5e;
+    margin: 4px;
 }
  
 /* -----------------------------------------------------------------------------
@@ -155,23 +161,23 @@ window#waybar {
 
 #idle_inhibitor {
    color: #ebcb8b;
+   font-size: 16px;
 }
 
 #tray {
 }
 
 #custom-launcher,#custom-power{
-    /*border-style: hidden;*/
-    margin-top:2px;
     color: #f00;
+    font-size: 16px;
 }
 
 #window{
-    /*border-style: hidden;*/
-    margin-top:1px;  
-}    
+    min-width: 10px;
+}
+
 #mode{
-    margin-bottom:3px;
+    color: #ebcb8b;
 }
 
 #custom-keyboard-layout{
