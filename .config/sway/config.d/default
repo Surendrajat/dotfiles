@@ -194,8 +194,8 @@ bindsym XF86MonBrightnessDown exec light -U 5 && light -G | cut -d'.' -f1 > $SWA
 # App shortcuts
 #
 
-bindsym $mod+n exec thunar
-bindsym $mod+o exec firedragon
+# bindsym $mod+n exec thunar
+# bindsym $mod+o exec firedragon
 
 #
 # Screenshots

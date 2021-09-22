@@ -2,7 +2,6 @@
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Desktop notifications
-#exec mako
 exec dunst
 
 # GTK3 applications take a long time to start
@@ -11,7 +10,7 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
      
 # Sway Fader
-exec python3 ~/.config/sway/scripts/swayfader.py     
+# exec python3 ~/.config/sway/scripts/swayfader.py     
  
 # Wob
 exec mkfifo $SWAYSOCK.wob
@@ -23,8 +22,8 @@ exec autotiling
 # Wlsunset
 exec ~/.config/sway/scripts/light.sh
 
-# Welcome
-exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/
+# Startup apps (using https://github.com/jceb/dex)
+#exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 
 # Clipman
 exec clipman restore
@@ -37,7 +36,7 @@ exec gnome-keyring-daemon --daemonize --start --components=gpg,pkcs11,secrets,ss
 exec libinput-gestures-setup start
 
 # Outputs
-exec kanshi
+# exec kanshi
 
 # XDG Desktop Portal
 exec /usr/libexec/xdg-desktop-portal
