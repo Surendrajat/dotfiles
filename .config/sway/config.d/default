@@ -13,7 +13,8 @@ set $term-float alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi -c ~/.config/wofi/config -I
+# set $menu wofi -c ~/.config/wofi/config -I
+set $menu ulauncher-toggle
 
 set $launcher nwggrid
 
@@ -52,7 +53,7 @@ bindsym $mod+q kill
 bindsym $mod+space exec $menu
 
 # Launcher
-bindsym $mod+Shift+d exec $launcher
+bindsym $mod+d exec $launcher
 
 # Activities
 bindsym $mod+p exec ~/.config/wofi/windows.py

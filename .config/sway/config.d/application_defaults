@@ -11,6 +11,8 @@ for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enabl
 for_window [app_id="pamac-manager"] floating enable, resize set width 80 ppt height 70 ppt
 for_window [class="Lxappearance"] floating enable, resize set width 60 ppt height 50 ppt
 for_window [app_id="connman-gtk"] floating enable, resize set width 50 ppt height 50 ppt
+for_window [class="MEGAsync"] floating enable, resize set width 20 ppt height 50 ppt
+for_window [app_id="ulauncher"] floating enable, border pixel 0, sticky enable
 
 # set floating for window roles
 for_window [window_role="pop-up"] floating enable

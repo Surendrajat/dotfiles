@@ -44,3 +44,10 @@ exec /usr/libexec/xdg-desktop-portal
 # Tracker daemon for gnome apps
 exec tracker daemon -s
 
+# Ulauncher
+exec ulauncher --hide-window --no-window-shadow
+
+# MegaSync
+exec sleep 30 && megasync
+exec sleep 33 && megasync
+
