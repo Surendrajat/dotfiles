@@ -41,7 +41,7 @@ nord15 #b48ead
 /* Reset all styles */
 
 * {
-    color: #eceff4;
+    color: #88c0d0;
     border: 0;
     border-radius: 10px;
     padding: 0 0;
@@ -76,7 +76,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    background: #88c0d0;
+    background: #5e81ac;
 }
 
 #clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman,#custom-dunst,#custom-mic {
