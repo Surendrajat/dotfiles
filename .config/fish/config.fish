@@ -29,6 +29,13 @@ if test -d ~/.local/share/go/bin
     end
 end
 
+# Add ~/.cargo/bin to PATH
+if test -d ~/.cargo/bin
+    if not contains -- ~/.cargo/bin $PATH
+	    set -p PATH ~/.cargo/bin
+    end
+end
+
 # Add ~/.emacs.d/bin to PATH
 if test -d ~/.emacs.d/bin
     if not contains -- ~/.emacs.d/bin $PATH
