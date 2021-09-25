@@ -2,8 +2,7 @@
 # Workspaces:
 #
 
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
+# Define names for default workspaces
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -49,12 +48,12 @@ assign [app_id="X-terminal-emulator"] $ws2
 assign [app_id="Alacritty"] $ws2
 # ws 3
 assign [app_id="jetbrains-idea"] $ws3
+assign [class="jetbrains-[a-z]+"] $ws3
 assign [class="Code"] $ws3
 assign [class="VSCodium"] $ws3
 assign [class="Emacs"] $ws3
 # ws 4
-assign [app_id="sublime_merge"] $ws4
-assign [app_id="smerge"] $ws4
+assign [app_id="s(ublime_)?merge"] $ws4
 # ws 5
 assign [app_id="Microsoft Teams - Preview"] $ws5
 assign [app_id="Slack"] $ws5
@@ -62,22 +61,8 @@ assign [app_id="(?i)zoom"] $ws5
 assign [class="(?i)Skype"] $ws5
 assign [class="(?i)Mailspring"] $ws5
 # ws 9
-assign [app_id="TelegramDesktop"] $ws9
-assign [app_id=".*Telegram_Desktop"] $ws9
+assign [app_id=".*Telegram_?Desktop"] $ws9
 assign [app_id="discord"] $ws9
 # ws 10
 assign [app_id="subl"] $ws10
-
-# floating windows
-for_window [app_id="nz.co.mega.megasync"] floating enable; move position center
-for_window [app_id="nz.co.mega.megasync"] resize set 400 560
-for_window [app_id="TelegramDesktop"] floating enable; move position center
-for_window [app_id="TelegramDesktop"] resize set 900 520
-for_window [title="Ulauncher Preferences"] floating enable; move position center
-for_window [title="Configuration" app_id="flameshot"] floating enable
-for_window [app_id="(?i)nm-connection-editor"] floating enable
-for_window [app_id=zoom] floating enable
-for_window [app_id="(?i)Com.github.alainm23.byte"] floating enable, resize set 200 200
-for_window [title="(?i)Emulator"] floating enable
-
 
