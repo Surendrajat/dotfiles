@@ -1,0 +1,8 @@
+{
+	"hardware_acceleration": "opengl",
+	"hide_menu": true,
+	"side_bar_layout": "tabs",
+//	"theme": "Merge Dark.sublime-theme"
+//    "theme": "Dracula.sublime-theme"
+	"theme": "Monokai.sublime-theme"
+}
