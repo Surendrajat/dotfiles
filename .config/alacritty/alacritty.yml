@@ -65,7 +65,7 @@ window:
     y: 20
 font:
   normal:
-    family: JetbrainsMonoNL
+    family: JetBrainsMono Nerd Font
     style: Regular
   size: 12
 live_config_reload: true
