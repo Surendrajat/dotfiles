@@ -10,7 +10,7 @@ for_window [app_id="pamac-manager"] floating enable, resize set width 80 ppt hei
 for_window [class="Lxappearance"] floating enable, resize set width 60 ppt height 50 ppt
 for_window [app_id="connman-gtk"] floating enable, resize set width 50 ppt height 50 ppt
 for_window [instance="megasync"] floating enable, border pixel 0, move position center
-#for_window [app_id="nz.co.mega.megasync"] floating enable; move position center
+for_window [app_id="nz.co.mega.megasync"] floating enable, border pixel 0
 for_window [app_id="ulauncher"] floating enable, border pixel 0, sticky enable
 for_window [title="Ulauncher Preferences"] floating enable, move position center
 # for_window [app_id=".*Telegram_?Desktop"] floating enable, move position center
@@ -27,6 +27,7 @@ for_window [title="nmtui"] floating enable,  resize set width 50 ppt height 70 p
 for_window [app_id="xsensors"] floating enable
 for_window [title="Save File"] floating enable
 for_window [app_id="firedragon" title="firedragon — Sharing Indicator"] kill
+for_window [title="^yarn start "] floating enable, move to scratchpad, resize set width 80 ppt height 90 ppt
 
 # set floating for window roles
 for_window [window_role="pop-up"] floating enable

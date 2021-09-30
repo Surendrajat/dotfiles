@@ -61,7 +61,7 @@ assign [app_id="(?i)zoom"] $ws5
 assign [class="(?i)Skype"] $ws5
 assign [class="(?i)Mailspring"] $ws5
 # ws 9
-assign [app_id=".*Telegram_?Desktop"] $ws9
+assign [app_id=".*(?i)Telegram_?(?i)Desktop"] $ws9
 assign [app_id="discord"] $ws9
 # ws 10
 assign [app_id="subl"] $ws10
