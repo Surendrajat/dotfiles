@@ -44,8 +44,8 @@ exec libinput-gestures-setup start
 # XDG Desktop Portal
 exec /usr/libexec/xdg-desktop-portal
 
-# Tracker daemon for gnome apps
-exec tracker daemon -s
+# Tracker(search backend) daemon for gnome apps
+exec tracker3 daemon -s
 
 # Ulauncher
 exec ulauncher --hide-window --no-window-shadow
