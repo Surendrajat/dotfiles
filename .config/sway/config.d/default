@@ -21,15 +21,12 @@ set $launcher nwggrid
 set $powermenu nwgbar
 
 ### Idle configuration
-exec swayidle -w\
-    timeout 300 'swaylock -f -C ~/.config/swaylock/config'\
-    timeout 400 'swaymsg "output * dpms off"' \
-    resume 'swaymsg "output * dpms on"' \
-    before-sleep 'swaylock -C ~/.config/swaylock/config' \
-	before-sleep 'playerctl pause'
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 100 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+set $locker 'swaylock -f'
+exec swayidle -w \
+    timeout 330 $locker \
+    timeout 300 'swaymsg "output * dpms off"' \
+		resume 'swaymsg "output * dpms on"' \
+    before-sleep $locker
 
 ## Lock Screen
 bindsym $mod+x exec ~/.config/sway/scripts/lockman.sh
