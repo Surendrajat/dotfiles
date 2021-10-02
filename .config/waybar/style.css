@@ -120,7 +120,7 @@ window#waybar {
 }
 
 #network.disabled {
-    color:#bf616a;
+    color:#2e3440;
 }
 
 #network{
@@ -128,7 +128,7 @@ window#waybar {
 }
 
 #network.disconnected {
-    color: #bf616a;
+    color: #2e3440;
 }
 
 #pulseaudio {
@@ -150,6 +150,10 @@ window#waybar {
 #idle_inhibitor {
    color: #ebcb8b;
    font-size: 16px;
+}
+
+#idle_inhibitor.deactivated {
+   color: #2e3440;
 }
 
 #custom-power{
