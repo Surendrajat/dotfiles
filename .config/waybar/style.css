@@ -79,7 +79,7 @@ window#waybar {
     background: #5e81ac;
 }
 
-#clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman,#custom-dunst {
+#clock, #battery, #idle_inhibitor, #custom-keyboard-layout, #network, #pulseaudio, #mode, #tray, #window, #custom-power, #custom-dunst {
     padding: 2px 8px;
     background-color: #434c5e;
     margin: 4px;
@@ -92,10 +92,6 @@ window#waybar {
  
 #clock {
  color:#a3beac;
-}
-
-#backlight {
-    color: #ebcb8b;
 }
 
 #battery {
@@ -121,14 +117,6 @@ window#waybar {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-}
-
-#cpu {
-    color:#a3be8c ;
-}
-
-#memory {
-    color: #d3869b;
 }
 
 #network.disabled {
@@ -159,23 +147,12 @@ window#waybar {
     color: #2e3440;
 }
 
-#temperature {
-    color: #8fbcbb;
-}
-
-#temperature.critical {
-    color: #bf616a;
-}
-
 #idle_inhibitor {
    color: #ebcb8b;
    font-size: 16px;
 }
 
-#tray {
-}
-
-#custom-launcher,#custom-power{
+#custom-power{
     color: #f00;
     font-size: 16px;
 }
@@ -188,9 +165,9 @@ window#waybar {
     color: #ebcb8b;
 }
 
-#custom-keyboard-layout{
+/* #custom-keyboard-layout{
    color:#d08770;
-}   
+}    */
 
 #custom-dunst {
     color:#d0d7e0;

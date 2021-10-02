@@ -2,10 +2,8 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     //"height": 32,
-    //"width": 1350, // Waybar width
+    //"width": 1350,
     // Choose the order of the modules
-    //"modules-left": ["custom/launcher","sway/workspaces", "sway/mode", "sway/window"],
-    //"modules-right": ["custom/pacman", "backlight", "custom/keyboard-layout", "cpu", "memory", "battery", "network", "pulseaudio","tray", "idle_inhibitor", "clock","custom/power"], 
     "modules-left": [
         "sway/window",
         "sway/mode"
@@ -74,31 +72,6 @@
         "interval": 5,
         "tooltip": true
     },
-    "cpu": {
-        "format": " {usage}%",
-        "on-click": "alacritty -e htop"
-    },
-    "memory": {
-        "format": "﬙ {}%",
-        "on-click": "alacritty -e htop"
-    },
-    "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C ",
-        "format": "{temperatureC}°C "
-    },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{icon} {percent}%",
-        "format-icons": [
-            "",
-            ""
-        ],
-        "on-scroll-down": "brightnessctl -c backlight set 5%",
-        "on-scroll-up": "brightnessctl -c backlight set +5%"
-    },
     "battery": {
         "states": {
             // "good": 95,
@@ -116,7 +89,6 @@
             "",
             ""
         ],
-        //"format-icons": ["", "", "", "", "", "", "", "", "", ""]
         "tooltip": false
     },
     "network": {
@@ -178,14 +150,6 @@
         "on-scroll-down": "",
         "tooltip": false
     },
-    "custom/pacman": {
-        "format": " {}",
-        "interval": 7200, // every two hours
-        "exec": "checkupdates | wc -l", // # of updates
-        "exec-if": "exit 0", // always run; consider advanced run conditions
-        "on-click": "alacritty -e sudo pacman -Syu ; pkill -SIGRTMIN+8 waybar", // update system
-        "signal": 8
-    },
     "custom/power": {
         "format": "⏻",
         "on-click": "nwgbar",
@@ -200,11 +164,6 @@
         "signal": 1, // SIGHUP
         "tooltip": false,
         "on-click": "~/.config/waybar/scripts/keyhint.sh",
-    },
-    "custom/launcher": {
-        "format": " ",
-        "on-click": "exec nwggrid",
-        "tooltip": false,
     },
     "custom/dunst": {
         "exec": "~/.config/waybar/scripts/dunst.sh",
