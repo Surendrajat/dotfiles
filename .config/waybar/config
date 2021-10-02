@@ -63,14 +63,16 @@
         "spacing": 5
     },
     "clock": {
-        "tooltip-format": "{:%A %B %d %Y | %H:%M}",
+        "tooltip-format": "<big>{: %B %Y}</big>\n\n<tt><small>{calendar}</small></tt>",
+        "locale": "en_GB",
+        //"tooltip-format": "{:%A %B %d %Y | %H:%M}",
         //"format": " {:%a %d %b  %I:%M %p}",	//12 hour format
         "format": " {:%a %d %b  %H:%M}", //24 hour format
         "format-alt": " {:%d/%m/%Y  %H:%M:%S}",
         //"timezones": [ "Kolkata" ],
         //"max-length": 200
-        "interval": 1,
-        "tooltip": false
+        "interval": 5,
+        "tooltip": true
     },
     "cpu": {
         "format": " {usage}%",
