@@ -163,11 +163,11 @@
 
     # Split notifications into multiple lines if they don't fit into
     # geometry.
-    word_wrap = true
+    word_wrap = no
 
     # When word_wrap is set to no, specify where to make an ellipsis in long lines.
     # Possible values are "start", "middle" and "end".
-    ellipsize = middle
+    ellipsize = end
 
     # Ignore newlines '\n' in notifications.
     ignore_newline = true
@@ -209,7 +209,7 @@
     ### Misc/Advanced ###
 
     # dmenu path.
-    dmenu = /usr/bin/bemenu -p dunst:
+    dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
     browser = /usr/bin/firefox -new-tab
