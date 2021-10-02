@@ -1,3 +1,3 @@
-GOPATH=/home/surendra/.local/share/go
+GOPATH=$HOME/.local/share/go
 GOPROXY=direct
 GOSUMDB=off
