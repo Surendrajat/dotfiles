@@ -79,7 +79,7 @@ window#waybar {
     background: #5e81ac;
 }
 
-#clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman,#custom-dunst,#custom-mic {
+#clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #mode, #tray, #window,#custom-launcher,#custom-power,#custom-pacman,#custom-dunst {
     padding: 2px 8px;
     background-color: #434c5e;
     margin: 4px;
@@ -144,11 +144,19 @@ window#waybar {
 }
 
 #pulseaudio {
+    color: #e0a7e0;
+}
+
+#pulseaudio.sink.muted {
+    color: #2e3440;
+}
+
+#pulseaudio.sink:not(.muted) {
     color: #b4eead;
 }
 
-#pulseaudio.muted {
-    color: #3b4252;
+#pulseaudio.source-muted {
+    color: #2e3440;
 }
 
 #temperature {
@@ -186,8 +194,4 @@ window#waybar {
 
 #custom-dunst {
     color:#d0d7e0;
-}
-
-#custom-mic {
-    color:#e0a7e0;
 }

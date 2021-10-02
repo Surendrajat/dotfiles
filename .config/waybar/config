@@ -7,15 +7,15 @@
     //"modules-left": ["custom/launcher","sway/workspaces", "sway/mode", "sway/window"],
     //"modules-right": ["custom/pacman", "backlight", "custom/keyboard-layout", "cpu", "memory", "battery", "network", "pulseaudio","tray", "idle_inhibitor", "clock","custom/power"], 
     "modules-left": [
-        "sway/mode",
-        "sway/window"
+        "sway/window",
+        "sway/mode"
     ],
     "modules-center": [
         "sway/workspaces"
     ],
     "modules-right": [
-        "pulseaudio",
-        "custom/mic",
+        "pulseaudio#sink",
+        "pulseaudio#source",
         "idle_inhibitor",
         "network",
         "clock",
@@ -123,27 +123,57 @@
         "format-wifi": " {essid}",
         "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
         "format-disconnected": "⚠ Disconnected",
-        "on-click": "connman-gtk",
+        // "on-click": "connman-gtk",
         "tooltip": false
     },
-    "pulseaudio": {
-        "scroll-step": 5,
+    "pulseaudio#sink": {
         "format": "{icon} {volume}%",
-        "format-bluetooth": "{icon} {volume}%",
-        "format-muted": "muted ",
+        "format-bluetooth": "{icon} {volume}%",
+        // "format-bluetooth-muted": "{icon} muted",
+        // "format-muted": "{icon} muted",
+        // "format-source": "",
+        // "format-source-muted": "",
         "format-icons": {
-            "headphones": "",
-            "handsfree": "",
-            "headset": "",
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
             "phone": "",
             "portable": "",
             "car": "",
             "default": [
+                "",
                 "",
                 ""
             ]
         },
-        "on-click": "pavucontrol",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-scroll-up": "",
+        "on-scroll-down": "",
+        "tooltip": false
+    },
+    "pulseaudio#source": {
+        "format": "{format_source}",
+        "format-bluetooth": "{format_source}",
+        "format-bluetooth-muted": "{format_source}",
+        "format-muted": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " {volume}%",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "on-scroll-up": "",
+        "on-scroll-down": "",
         "tooltip": false
     },
     "custom/pacman": {
@@ -177,12 +207,6 @@
     "custom/dunst": {
         "exec": "~/.config/waybar/scripts/dunst.sh",
         "on-click": "dunstctl set-paused toggle",
-        "restart-interval": 1,
-        "tooltip": false,
-    },
-    "custom/mic": {
-        "exec": "~/.config/waybar/scripts/mic.sh",
-        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
         "restart-interval": 1,
         "tooltip": false,
     },
