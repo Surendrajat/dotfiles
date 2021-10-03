@@ -1,0 +1,170 @@
+{
+  "go.goroot": "~/.golang/go",
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font','Cascadia Code','Fira Code Medium', 'Victor Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "git.ignoreLegacyWarning": true,
+  "editor.suggestSelection": "first",
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true
+  },
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.menuBarVisibility": "toggle",
+  "workbench.statusBar.visible": true,
+  "workbench.startupEditor": "none",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.minimap.enabled": true,
+  "code-runner.executorMap": {
+    "python": "python3 -u"
+  },
+  "debug.openDebug": "openOnDebugBreak",
+  "dart.flutterSdkPath": "/home/surendra/apps/flutter",
+  "dart.allowAnalytics": false,
+  "git.autofetch": true,
+  "go.autocompleteUnimportedPackages": true,
+  "go.lintTool": "golangci-lint",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": true
+  },
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "dart.debugExternalLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "git.confirmSync": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "java.semanticHighlighting.enabled": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "vscode.typescript-language-features",
+  "cSpell.enableFiletypes": [
+    "dart",
+    "dockerfile",
+    "go.mod",
+    "go.sum",
+    "groovy",
+    "jenkinsfile",
+    "properties",
+    "rst",
+    "smali"
+  ],
+  "cSpell.language": "en,en-GB,en-US",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "debug.onTaskErrors": "showErrors",
+  "editor.linkedEditing": true,
+  "editor.formatOnType": true,
+  "files.associations": {
+    "*.pacscript": "shellscript"
+  },
+  "workbench.sideBar.location": "right",
+  "python.languageServer": "Pylance",
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "editor.formatOnPaste": true,
+  "cmake.configureOnOpen": true,
+  "python.showStartPage": false,
+  "tabnine.experimentalAutoImports": true,
+  "gitlens.advanced.telemetry.enabled": false,
+  "code-runner.enableAppInsights": false,
+  "vscode-mysql.enableTelemetry": false,
+  "githubPullRequests.telemetry.enabled": false,
+  "rest-client.enableTelemetry": false,
+  "svg.preview.mode": "svg",
+  "terminal.integrated.fontFamily": "JetBrainsMono NF",
+  "workbench.colorTheme": "Monokai",
+  "editor.fontSize": 15,
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist"
+  ],
+  "apklab.apkSignerPath": "/home/surendra/.apklab/uber-apk-signer-1.2.1.jar",
+  "apklab.jadxDirPath": "/home/surendra/.apklab/jadx-1.2.0",
+  "apklab.apktoolPath": "/home/surendra/.apklab/apktool_2.6.0.jar",
+  "java.project.importHint": false,
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": [
+      "document"
+    ],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "debug.javascript.suggestPrettyPrinting": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "docker.showStartPage": false,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "update.mode": "none",
+  "workbench.enableExperiments": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "python.pythonPath": "/usr/bin/python3",
+  "workbench.editor.untitled.hint": "hidden",
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "redhat.telemetry.enabled": false,
+  "editor.formatOnSave": true,
+  "window.dialogStyle": "custom",
+  "dart.showInspectorNotificationsForWidgetErrors": false,
+  "window.zoomLevel": 1,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.inlineSuggest.enabled": true,
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "react-native-tools.showUserTips": false,
+  "diffEditor.renderSideBySide": false,
+  "editor.bracketPairColorization.enabled": true,
+  "keyboard.dispatch": "keyCode"
+}
