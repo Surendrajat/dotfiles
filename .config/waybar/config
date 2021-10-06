@@ -18,6 +18,7 @@
         "network",
         "clock",
         "battery",
+		"custom/github",
         "custom/dunst",
         "custom/power"
     ],
@@ -169,6 +170,12 @@
         "exec": "~/.config/waybar/scripts/dunst.sh",
         "on-click": "dunstctl set-paused toggle",
         "restart-interval": 1,
+        "tooltip": false,
+    },
+    "custom/github": {
+        "exec": "~/.config/waybar/scripts/github.sh",
+        "on-click": "xdg-open 'https://github.com/notifications'",
+        "restart-interval": 300,
         "tooltip": false,
     },
 }

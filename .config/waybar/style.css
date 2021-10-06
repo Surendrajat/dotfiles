@@ -79,7 +79,7 @@ window#waybar {
     background: #5e81ac;
 }
 
-#clock, #battery, #idle_inhibitor, #custom-keyboard-layout, #network, #pulseaudio, #mode, #tray, #window, #custom-power, #custom-dunst {
+#clock, #battery, #idle_inhibitor, #custom-keyboard-layout, #network, #pulseaudio, #mode, #tray, #window, #custom-power, #custom-dunst, #custom-github {
     padding: 2px 8px;
     background-color: #434c5e;
     margin: 4px;
