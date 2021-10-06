@@ -29,10 +29,10 @@ if test -d ~/.local/share/go/bin
     end
 end
 
-# Add ~/.cargo/bin to PATH
-if test -d ~/.cargo/bin
-    if not contains -- ~/.cargo/bin $PATH
-	    set -p PATH ~/.cargo/bin
+# Add $CARGO_HOME/bin to PATH
+if test -d $CARGO_HOME/bin
+    if not contains -- $CARGO_HOME/bin $PATH
+	    set -p PATH $CARGO_HOME/bin
     end
 end
 
