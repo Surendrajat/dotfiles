@@ -1,0 +1,10 @@
+git:
+  paging:
+    colorArg: always
+    pager: delta --paging=never --24-bit-color=never
+
+gui:
+  showFileTree: true
+  showRandomTip: false
+  showCommandLog: false
+
