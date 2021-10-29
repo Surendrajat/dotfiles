@@ -17,6 +17,7 @@
         "idle_inhibitor",
         "network",
         "clock",
+        "custom/weather",
         "battery",
 		"custom/github",
         "custom/dunst",
@@ -167,5 +168,12 @@
         "on-click": "xdg-open 'https://github.com/notifications'",
         "restart-interval": 300,
         "tooltip": false,
+    },
+    "custom/weather": {
+        "exec": "python ~/.config/waybar/scripts/weather.py",
+        "restart-interval": 300,
+        "return-type": "json",
+        "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(cat $PRIV_ENV_FILE | grep weather_location | cut -d '=' -f 2)"
+        // "format-alt": "{alt}",
     },
 }

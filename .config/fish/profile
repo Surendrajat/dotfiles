@@ -6,6 +6,9 @@ export XDG_DATA_HOME="$HOME/.local/share"
 # cargo data dir
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 
+# private env variables
+export PRIV_ENV_FILE="$HOME/.config/priv-env-vars"
+
 # Default apps
 export EDITOR=nvim
 export BROWSER=brave-browser
