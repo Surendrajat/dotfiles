@@ -28,6 +28,7 @@ for_window [app_id="xsensors"] floating enable
 for_window [title="Save File"] floating enable
 for_window [app_id="firedragon" title="firedragon — Sharing Indicator"] kill
 for_window [title="^yarn start "] floating enable, move to scratchpad, resize set width 80 ppt height 90 ppt
+for_window [class="csgo_linux64"] fullscreen
 
 # set floating for window roles
 for_window [window_role="pop-up"] floating enable

@@ -60,6 +60,9 @@ assign [app_id="Slack"] $ws5
 assign [app_id="(?i)zoom"] $ws5
 assign [class="(?i)Skype"] $ws5
 assign [class="(?i)Mailspring"] $ws5
+# ws 8
+assign [class="(?i)Steam"] $ws8
+assign [class="csgo_linux64"] $ws8
 # ws 9
 assign [app_id=".*(?i)Telegram_?(?i)Desktop"] $ws9
 assign [app_id="discord"] $ws9
