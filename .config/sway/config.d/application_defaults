@@ -27,6 +27,8 @@ for_window [title="nmtui"] floating enable,  resize set width 50 ppt height 70 p
 for_window [app_id="xsensors"] floating enable
 for_window [title="Save File"] floating enable
 for_window [app_id="firedragon" title="firedragon — Sharing Indicator"] kill
+for_window [app_id="firefox" title="Firefox — Sharing Indicator"] floating enable
+for_window [app_id="firefox" title="Picture-in-Picture"] floating enable, sticky enable
 for_window [title="^yarn start "] floating enable, move to scratchpad, resize set width 80 ppt height 90 ppt
 for_window [class="csgo_linux64"] fullscreen
 

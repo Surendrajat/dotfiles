@@ -47,8 +47,8 @@ assign [app_id="(?i)firedragon"] $ws1
 assign [app_id="X-terminal-emulator"] $ws2
 assign [app_id="Alacritty"] $ws2
 # ws 3
-assign [app_id="jetbrains-idea"] $ws3
-assign [class="jetbrains-[a-z]+"] $ws3
+assign [app_id="jetbrains-[a-z]+"] $ws3
+assign [class="jetbrains\-.+"] $ws3
 assign [class="Code"] $ws3
 assign [class="VSCodium"] $ws3
 assign [class="Emacs"] $ws3
