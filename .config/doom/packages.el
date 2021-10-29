@@ -49,11 +49,11 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 
+; (package! calfw)
+; (package! dashboard)
+(package! org-bullets)
 (package! evil-tutor)
+(package! rainbow-mode)
+; (package! org-superstar)
+(package! mixed-pitch)
 
-(package! org-superstar)
-(use-package! org-superstar
-  :config
-  (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
-  (setq org-superstar-headline-bullets-list '("☰" "☷" "☵" "☲"  "☳" "☴"  "☶"  "☱" ))
-)
