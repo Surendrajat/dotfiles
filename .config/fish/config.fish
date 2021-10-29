@@ -36,10 +36,10 @@ if test -d $CARGO_HOME/bin
     end
 end
 
-# Add ~/.emacs.d/bin to PATH
-if test -d ~/.emacs.d/bin
-    if not contains -- ~/.emacs.d/bin $PATH
-	    set -p PATH ~/.emacs.d/bin
+# Add ~/.config/emacs/bin to PATH
+if test -d ~/.config/emacs/bin
+    if not contains -- ~/.config/emacs/bin $PATH
+	    set -p PATH ~/.config/emacs/bin
     end
 end
 
