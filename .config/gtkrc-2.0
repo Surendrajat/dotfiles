@@ -1,7 +1,7 @@
 # DO NOT EDIT! This file will be overwritten by LXAppearance.
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
-gtk-theme-name="Nordic-darker"
+#gtk-theme-name="Nordic-darker"
 gtk-icon-theme-name="Tela-circle-dark"
 gtk-sound-theme-name="Smooth"
 gtk-font-name="Google Sans Regular 10"
