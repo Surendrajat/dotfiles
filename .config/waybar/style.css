@@ -45,9 +45,9 @@ nord15 #b48ead
     border: 0;
     border-radius: 10px;
     padding: 0 0;
-    font-family:UbuntuMono,FontAwesome;
+    font-family: 'Inter Medium',FontAwesome,'JetBrainsMono Nerd Font';
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 900;
     padding-bottom:0px;
 }
 
@@ -160,6 +160,7 @@ window#waybar {
 #custom-power{
     color: #f00;
     font-size: 16px;
+    padding-right: 10px;
 }
 
 #window{
