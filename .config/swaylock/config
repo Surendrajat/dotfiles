@@ -1,5 +1,5 @@
-#screenshots
-image=~/Pictures/seaowl_wallpaper.png
+screenshots
+# image=~/Pictures/seaowl_wallpaper.png
 clock
 indicator
 indicator-radius=100
@@ -13,4 +13,7 @@ inside-color=00000088
 separator-color=00000000
 #grace=2
 fade-in=0.2
+font=Inter Medium
+timestr=%T
+datestr=%a, %d %b
 
