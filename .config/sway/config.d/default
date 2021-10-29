@@ -190,8 +190,8 @@ bindsym XF86AudioPrev exec playerctl previous
 # Backlight
 #
 
-bindsym XF86MonBrightnessUp exec light -A 5 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob
-bindsym XF86MonBrightnessDown exec light -U 5 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob
+bindsym XF86MonBrightnessUp exec light -A 1 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob
+bindsym XF86MonBrightnessDown exec light -U 1 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob
 
 #
 # App shortcuts
