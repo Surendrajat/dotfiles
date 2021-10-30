@@ -1,6 +1,7 @@
 # Auth with polkit-gnome:
 # exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec /usr/libexec/polkit-gnome-authentication-agent-1
+# exec /usr/libexec/polkit-gnome-authentication-agent-1
+exec lxpolkit
 
 # Desktop notifications
 # exec dunst
